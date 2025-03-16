@@ -1,0 +1,28 @@
+:root {
+    --fonte-principal: "Montserrat";
+    --cor-fundo: #F8F4FF;
+    --cor-branco: #EFF0F4;
+    --cor-preto-texto: #464646;
+    --cor-branca-texto-botoes: #FFFFFF;
+    --cor-cinza: #A3A3A3;
+    --cor-amarelo-botão: #FFB050;
+    --cor-cinza-borda-botao: #ECECEC;
+    --cor-azul-botao: #4894FF;
+    --cor-preto-horario: #333333;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    font-family: var(--fonte-principal);
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.cabecalho__horario {
+    color: var(--cor-preto-horario);
+    font-weight: 400;
+    font-size: 14px;
+}
