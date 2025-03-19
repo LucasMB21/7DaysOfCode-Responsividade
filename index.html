@@ -1,153 +1,196 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cuidar+</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header class="cabecalho">
-        <section class="cabecalho__inicio">
-            <span class="cabecalho__horario">03:33</span>
-            <div class="cabecalho__icones">
-                <img src="img/signal_cellular_4_bar.svg" alt="Sinal de rede do celular" class="cabecalho__inicio-icone-rede">
-                <img src="img/battery_full.svg" alt="Bateria cheia" class="cabecalho__inicio-icone-bateria">
-                <img src="img/wifi.svg" alt="Sinal de Wi-Fi" class="cabecalho__inicio-icone-wi-fi">
-            </div>    
-        </section>
-        <div class="perfil">
-            <img src="img/perfil-1.png" alt="Imagem de perfil da Sônia" class="perfil__foto__principal">
-            <div class="perfil__informacoes">
-                <h1 class="perfil__titulo">Olá, Sônia</h1>
-                <p class="perfil__paragrafo">Mais 4 consultas hoje</p>
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <body>
+
+    <main>
+      <section class="home">
+        <img src="./assets/perfil-1.jpg" alt="" class="profile" />
+        <div class="home__info">
+          <strong>Olá, Sônia</strong>
+          <p>Mais 4 consultas hoje</p>
+        </div>
+      </section>
+
+      <section class="consultas">
+        <div class="consultas__data">
+          <strong>Hoje</strong>
+        </div>
+        <ul>
+
+          <li>
+            <div class="consulta__card">
+              <div class="consulta__card-titulo">
+                <div class="consulta__card-paciente">
+                  <img src="./assets/perfil-2.jpg" alt="Imagem de perfil do paciente" />
+                  <div>
+                    <strong>Luciana Dias</strong>
+                    <span>
+                      <span aria-hidden="true" class="camera"></span>
+                      Consulta remota
+                    </span>
+                  </div>
+                </div>
+                <button class="consulta__card-chat"></button>
+              </div>
+              <div class="consulta__card-conteudo">
+                <p>14:00 - 15:00 (1 hora)</p>
+                <div class="consulta__card-acoes">
+                  <button class="btn-secundario">Ligar por vídeo</button>
+                  <button class="btn-terciario">Ligar por áudio</button>
+                </div>
+              </div>
             </div>
-        </div>
-    </header>
+          </li>
 
-    <main class="container">
-        <h3 class="container__dia">Hoje</h3>
-        <div class="container__consulta_num-01">
-            <img src="img/perfil-2.png" alt="Imagem de perfil da Luciana Dias" class="perfil__foto__paciente">
-            <h3 class="container__consulta-nome-paciente">Luciana Dias</h3>
-            <img src="img/Camera.svg" alt="Imagem de uma camera" class="container__consulta-img-camera">
-            <p class="container__consulta-modalidade">Consulta remota</p>
-            <p class="container__consulta-horario">14:00 - 15:00 (1 hora)</p>
-            <img src="img/Chatcirculo2.svg" alt="imagem icone de chat" class="container__consulta-img-chat">
-            <button class="botao-ligacao-video">Ligar por vídeo</button>
-            <button class="botao-ligacao-audio">Ligar por áudio</button>
-        </div>
+          <li>
+            <div class="consulta__card">
+              <div class="consulta__card-titulo">
+                <div class="consulta__card-paciente">
+                  <img src="./assets/perfil-3.jpg" alt="Imagem de perfil do paciente" />
+                  <div>
+                    <strong>Larissa Santana</strong>
+                    <span>
+                      <span aria-hidden="true" class="mapa"></span>
+                      Consulta no local
+                    </span>
+                  </div>
+                </div>
+                <button class="consulta__card-chat">
+                </button>
+              </div>
+              <div class="consulta__card-conteudo">
+                <p>16:00 - 17:00 - (1 hora)</p>
+                <div class="consulta__card-acoes">
+                  <button class="btn-primario">Ver endereço</button>
+                </div>
+              </div>
+            </div>
+          </li>
 
-        <div class="container__consulta_num-02">
-            <img src="img/perfil-3.png" alt="Imagem de perfil da Larissa Santana" class="perfil__foto__paciente">
-            <h3 class="container__consulta-nome-paciente">Larissa Santana</h3>
-            <img src="img/pin.svg" alt="Imagem de um pin" class="container__consulta-img-pin">
-            <p class="container__consulta-modalidade">Consulta no local</p>
-            <p class="container__consulta-horario">16:00 - 17:00 - (1 hora)</p>
-            <img src="img/Chatcirculo2.svg" alt="imagem icone de chat" class="container__consulta-chat">
-            <button class="botao-ver-endereco">Ver endereço</button>
-        </div>
+          <li>
+            <div class="consulta__card">
+              <div class="consulta__card-titulo">
+                <div class="consulta__card-paciente">
+                  <img src="./assets/perfil-4.jpg" alt="Imagem de perfil do paciente" />
+                  <div>
+                    <strong>Marcoes Correia</strong>
+                    <span>
+                      <span aria-hidden="true" class="camera"></span>
+                      Consulta remota
+                    </span>
+                  </div>
+                </div>
+                <button class="consulta__card-chat">
+                </button>
+              </div>
+              <div class="consulta__card-conteudo">
+                <p>17:20 - 18:00 (40 minutos)</p>
+                <div class="consulta__card-acoes">
+                  <button class="btn-secundario">Ligar por vídeo</button>
+                  <button class="btn-terciario">Ligar por áudio</button>
+                </div>
+              </div>
+            </div>
+          </li>
 
-        <div class="container__consulta_num-03">
-            <img src="img/perfil-4.png" alt="Imagem de perfil do Marcos Correia" class="perfil__foto__paciente">
-            <h3 class="container__consulta-nome-paciente">Marcos Correia</h3>
-            <img src="img/Camera.svg" alt="Imagem de uma camera" class="container__consulta-img-camera">
-            <p class="container__consulta-modalidade">Consulta remota</p>
-            <p class="container__consulta-horario">17:20 - 18:00 (40 minutos)</p>
-            <img src="img/Chatcirculo2.svg" alt="imagem icone de chat" class="container__consulta-img-chat">
-            <button class="botao-ligacao-video">Ligar por vídeo</button>
-            <button class="botao-ligacao-audio">Ligar por áudio</button>
-        </div>
+        </ul>
 
-        <h3 class="container__dia">Amanhã</h3>
-        <div class="container__consulta_num-04">
-            <img src="img/perfil-5.png" alt="Imagem de perfil da Clara Lemos" class="perfil__foto__paciente">
-            <h3 class="container__consulta-nome-paciente">Clara Lemos</h3>
-            <img src="img/pin.svg" alt="Imagem de um pin" class="container__consulta-img-pin">
-            <p class="container__consulta-modalidade">Consulta no local</p>
-            <p class="container__consulta-horario">18:00 - 19:00 - (1 hora)</p>
-            <img src="img/Chatcirculo2.svg" alt="imagem icone de chat" class="container__consulta-chat">
-            <button class="botao-ver-endereco">Ver endereço</button>
+        <div class="consultas__data">
+          <strong>Amanhã</strong>
         </div>
+        
+        <ul>
 
-        <div class="container__consulta_num-01">
-            <img src="img/perfil-2.png" alt="Imagem de perfil da Luciana Dias" class="perfil__foto__paciente">
-            <h3 class="container__consulta-nome-paciente">Luciana Dias</h3>
-            <img src="img/Camera.svg" alt="Imagem de uma camera" class="container__consulta-img-camera">
-            <p class="container__consulta-modalidade">Consulta remota</p>
-            <p class="container__consulta-horario">14:00 - 15:00 (1 hora)</p>
-            <img src="img/Chatcirculo2.svg" alt="imagem icone de chat" class="container__consulta-img-chat">
-            <button class="botao-ligacao-video">Ligar por vídeo</button>
-            <button class="botao-ligacao-audio">Ligar por áudio</button>
-        </div>
+          <li>
+            <div class="consulta__card">
+              <div class="consulta__card-titulo">
+                <div class="consulta__card-paciente">
+                  <img src="./assets/perfil-5.jpg" alt="Imagem de perfil do paciente" />
+                  <div>
+                    <strong>Clara Lemos</strong>
+                    <span>
+                      <span aria-hidden="true" class="camera"></span>
+                      Consulta remota
+                    </span>
+                  </div>
+                </div>
+                <button class="consulta__card-chat">
+                </button>
+              </div>
+              <div class="consulta__card-conteudo">
+                <p>18:00 - 19:00 - (1 hora)</p>
+                <div class="consulta__card-acoes">
+                  <button class="btn-secundario">Ligar por vídeo</button>
+                  <button class="btn-terciario">Ligar por áudio</button>
+                </div>
+              </div>
+            </div>
+          </li>
 
-        <div class="container__consulta_num-03">
-            <img src="img/perfil-4.png" alt="Imagem de perfil do Marcos Correia" class="perfil__foto__paciente">
-            <h3 class="container__consulta-nome-paciente">Marcos Correia</h3>
-            <img src="img/Camera.svg" alt="Imagem de uma camera" class="container__consulta-img-camera">
-            <p class="container__consulta-modalidade">Consulta remota</p>
-            <p class="container__consulta-horario">17:20 - 18:00 (40 minutos)</p>
-            <img src="img/Chatcirculo2.svg" alt="imagem icone de chat" class="container__consulta-img-chat">
-            <button class="botao-ligacao-video">Ligar por vídeo</button>
-            <button class="botao-ligacao-audio">Ligar por áudio</button>
-        </div>
+          <li>
+            <div class="consulta__card">
+              <div class="consulta__card-titulo">
+                <div class="consulta__card-paciente">
+                  <img src="./assets/perfil-2.jpg" alt="Imagem de perfil do paciente" />
+                  <div>
+                    <strong>Luciana Dias</strong>
+                    <span>
+                      <span aria-hidden="true" class="camera"></span>
+                      Consulta remota
+                    </span>
+                  </div>
+                </div>
+                <button class="consulta__card-chat">
 
-        <div class="container__consulta_num-02">
-            <img src="img/perfil-3.png" alt="Imagem de perfil da Larissa Santana" class="perfil__foto__paciente">
-            <h3 class="container__consulta-nome-paciente">Larissa Santana</h3>
-            <img src="img/pin.svg" alt="Imagem de um pin" class="container__consulta-img-pin">
-            <p class="container__consulta-modalidade">Consulta no local</p>
-            <p class="container__consulta-horario">16:00 - 17:00 - (1 hora)</p>
-            <img src="img/Chatcirculo2.svg" alt="imagem icone de chat" class="container__consulta-chat">
-            <button class="botao-ver-endereco">Ver endereço</button>
-        </div>
+                </button>
+              </div>
+              <div class="consulta__card-conteudo">
+                <p>14:00 - 15:00 (1 hora)</p>
+                <div class="consulta__card-acoes">
+                  <button class="btn-secundario">Ligar por vídeo</button>
+                  <button class="btn-terciario">Ligar por áudio</button>
+                </div>
+              </div>
+            </div>
+          </li>
+          
+          <li>
+            <div class="consulta__card">
+              <div class="consulta__card-titulo">
+                <div class="consulta__card-paciente">
+                  <img src="./assets/perfil-4.jpg" alt="Imagem de perfil do paciente" />
+                  <div>
+                    <strong>Marcoes Correia</strong>
+                    <span>
+                      <span aria-hidden="true" class="camera"></span>
+                      Consulta remota
+                    </span>
+                  </div>
+                </div>
+                <button class="consulta__card-chat">
+                </button>
+              </div>
+              <div class="consulta__card-conteudo">
+                <p>17:20 - 18:00 (40 minutos)</p>
+                <div class="consulta__card-acoes">
+                  <button class="btn-secundario">Ligar por vídeo</button>
+                  <button class="btn-terciario">Ligar por áudio</button>
+                </div>
+              </div>
+            </div>
+          </li>
 
-        <h3 class="container__dia">Quarta-feira</h3>
-        <div class="container__consulta_num-04">
-            <img src="img/perfil-5.png" alt="Imagem de perfil da Clara Lemos" class="perfil__foto__paciente">
-            <h3 class="container__consulta-nome-paciente">Clara Lemos</h3>
-            <img src="img/pin.svg" alt="Imagem de um pin" class="container__consulta-img-pin">
-            <p class="container__consulta-modalidade">Consulta no local</p>
-            <p class="container__consulta-horario">18:00 - 19:00 - (1 hora)</p>
-            <img src="img/Chatcirculo2.svg" alt="imagem icone de chat" class="container__consulta-chat">
-            <button class="botao-ver-endereco">Ver endereço</button>
-        </div>
+        </ul>
 
-        <div class="container__consulta_num-01">
-            <img src="img/perfil-2.png" alt="Imagem de perfil da Luciana Dias" class="perfil__foto__paciente">
-            <h3 class="container__consulta-nome-paciente">Luciana Dias</h3>
-            <img src="img/Camera.svg" alt="Imagem de uma camera" class="container__consulta-img-camera">
-            <p class="container__consulta-modalidade">Consulta remota</p>
-            <p class="container__consulta-horario">14:00 - 15:00 (1 hora)</p>
-            <img src="img/Chatcirculo2.svg" alt="imagem icone de chat" class="container__consulta-img-chat">
-            <button class="botao-ligacao-video">Ligar por vídeo</button>
-            <button class="botao-ligacao-audio">Ligar por áudio</button>
-        </div>
-
-        <div class="container__consulta_num-03">
-            <img src="img/perfil-4.png" alt="Imagem de perfil do Marcos Correia" class="perfil__foto__paciente">
-            <h3 class="container__consulta-nome-paciente">Marcos Correia</h3>
-            <img src="img/Camera.svg" alt="Imagem de uma camera" class="container__consulta-img-camera">
-            <p class="container__consulta-modalidade">Consulta remota</p>
-            <p class="container__consulta-horario">17:20 - 18:00 (40 minutos)</p>
-            <img src="img/Chatcirculo2.svg" alt="imagem icone de chat" class="container__consulta-img-chat">
-            <button class="botao-ligacao-video">Ligar por vídeo</button>
-            <button class="botao-ligacao-audio">Ligar por áudio</button>
-        </div>
-
-        <div class="container__consulta_num-02">
-            <img src="img/perfil-3.png" alt="Imagem de perfil da Larissa Santana" class="perfil__foto__paciente">
-            <h3 class="container__consulta-nome-paciente">Larissa Santana</h3>
-            <img src="img/pin.svg" alt="Imagem de um pin" class="container__consulta-img-pin">
-            <p class="container__consulta-modalidade">Consulta no local</p>
-            <p class="container__consulta-horario">16:00 - 17:00 - (1 hora)</p>
-            <img src="img/Chatcirculo2.svg" alt="imagem icone de chat" class="container__consulta-chat">
-            <button class="botao-ver-endereco">Ver endereço</button>
-        </div>
+      </section>
     </main>
-</body>
+
+  </body>
 </html>
